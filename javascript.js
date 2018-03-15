@@ -28,8 +28,8 @@ $(document).on('click', '.searchButton', function(){
 			var searchDiv = $('<div class="search-item">');
 			var rating = response.data[i].rating;
 			var p = $('<p>').text('Rating: ' +rating);
-			var animated = responce.data[i].images.fixed_height.url;
-			var still = responce.data[i].images.fixed_height_still.url;
+			var animated = response.data[i].images.fixed_height.url;
+			var still = response.data[i].images.fixed_height_still.url;
 			var image = $('<img>');
 			image.attr('src', still);
 			image.attr('data-still', still);
